@@ -1,0 +1,121 @@
+RewriteEngine On
+RewriteRule ^(.*) - [E=BASE:%1]
+
+###############################
+
+#RewriteRule ^men.html$ product.php?request=index&menu=0
+#RewriteRule ^men/san-pham-moi.html$ product.php?request=newproduct&menu=0
+#RewriteRule ^men/san-pham-noi-bat.html$ product.php?request=hotproduct&menu=0
+#RewriteRule ^men/hot-deal.html$ product.php?request=hotdeal&menu=0
+#RewriteRule ^men/([a-zA-Z0-9_-]+).html$ product.php?request=menuproduct&menu=0&cat=$1
+#RewriteRule ^men/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ product.php?request=submenuproduct&menu=0&cat=$1&catid=$2
+#RewriteRule ^men/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$ product.php?request=detail&menu=0&cat=$1&catid=$2&id=$4
+
+
+##
+RewriteRule ^men/hot-deal/$ product.php?request=hotdeal&menu=0
+RewriteRule ^men/san-pham-noi-bat/$ product.php?request=hotproduct&menu=0
+RewriteRule ^men/san-pham-moi/$ product.php?request=newproduct&menu=0
+RewriteRule ^men/$ product.php?request=index&menu=0
+RewriteRule ^men/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)/$ product.php?request=detail&menu=0&cat=$1&catid=$2&id=$4
+RewriteRule ^men/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ product.php?request=submenuproduct&menu=0&cat=$1&catid=$2
+RewriteRule ^men/([a-zA-Z0-9_-]+)/$ product.php?request=menuproduct&menu=0&cat=$1
+##
+RewriteRule ^men/hot-deal$ product.php?request=hotdeal&menu=0
+RewriteRule ^men/hot-deal$ product.php?request=hotdeal&menu=0
+RewriteRule ^men/san-pham-noi-bat$ product.php?request=hotproduct&menu=0
+RewriteRule ^men/san-pham-moi$ product.php?request=newproduct&menu=0
+RewriteRule ^men$ product.php?request=index&menu=0
+
+#
+RewriteRule ^men/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/page-([0-9]+)$ product.php?request=submenuproduct&menu=0&cat=$1&catid=$2&page=$3
+RewriteRule ^men/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)$ product.php?request=detail&menu=0&cat=$1&catid=$2&id=$4
+RewriteRule ^men/([a-zA-Z0-9_-]+)/page-([0-9]+)$ product.php?request=menuproduct&menu=0&cat=$1&page=$2
+RewriteRule ^men/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ product.php?request=submenuproduct&menu=0&cat=$1&catid=$2
+RewriteRule ^men/([a-zA-Z0-9_-]+)$ product.php?request=menuproduct&menu=0&cat=$1
+##
+RewriteRule ^men/hot-deal.html$ product.php?request=hotdeal&menu=0
+RewriteRule ^men/san-pham-noi-bat.html$ product.php?request=hotproduct&menu=0
+RewriteRule ^men/san-pham-moi.html$ product.php?request=newproduct&menu=0
+RewriteRule ^men.html$ product.php?request=index&menu=0
+RewriteRule ^men/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$ product.php?request=detail&menu=0&cat=$1&catid=$2&id=$4
+RewriteRule ^men/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ product.php?request=submenuproduct&menu=0&cat=$1&catid=$2
+RewriteRule ^men/([a-zA-Z0-9_-]+).html$ product.php?request=menuproduct&menu=0&cat=$1
+##
+
+###############################
+
+#RewriteRule ^women.html$ product.php?request=index&menu=1
+#RewriteRule ^women/san-pham-moi.html$ product.php?request=newproduct&menu=1
+#RewriteRule ^women/san-pham-noi-bat.html$ product.php?request=hotproduct&menu=1
+#RewriteRule ^women/hot-deal.html$ product.php?request=hotdeal&menu=1
+#RewriteRule ^women/([a-zA-Z0-9_-]+).html$ product.php?request=menuproduct&menu=1&cat=$1
+#RewriteRule ^women/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ product.php?request=submenuproduct&menu=1&cat=$1&catid=$2
+#RewriteRule ^women/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$ product.php?request=detail&menu=1&cat=$1&catid=$2&id=$4
+
+##
+RewriteRule ^women/hot-deal/$ product.php?request=hotdeal&menu=1
+RewriteRule ^women/san-pham-noi-bat/$ product.php?request=hotproduct&menu=1
+RewriteRule ^women/san-pham-moi/$ product.php?request=newproduct&menu=1
+RewriteRule ^women/$ product.php?request=index&menu=1
+RewriteRule ^women/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)/$ product.php?request=detail&menu=1&cat=$1&catid=$2&id=$4
+RewriteRule ^women/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ product.php?request=submenuproduct&menu=1&cat=$1&catid=$2
+RewriteRule ^women/([a-zA-Z0-9_-]+)/$ product.php?request=menuproduct&menu=1&cat=$1
+##
+RewriteRule ^women/hot-deal$ product.php?request=hotdeal&menu=1
+RewriteRule ^women/hot-deal$ product.php?request=hotdeal&menu=1
+RewriteRule ^women/san-pham-noi-bat$ product.php?request=hotproduct&menu=1
+RewriteRule ^women/san-pham-moi$ product.php?request=newproduct&menu=1
+RewriteRule ^women$ product.php?request=index&menu=1
+
+#
+RewriteRule ^women/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/page-([0-9]+)$ product.php?request=submenuproduct&menu=1&cat=$1&catid=$2&page=$3
+RewriteRule ^women/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)$ product.php?request=detail&menu=1&cat=$1&catid=$2&id=$4
+RewriteRule ^women/([a-zA-Z0-9_-]+)/page-([0-9]+)$ product.php?request=menuproduct&menu=1&cat=$1&page=$2
+RewriteRule ^women/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ product.php?request=submenuproduct&menu=1&cat=$1&catid=$2
+RewriteRule ^women/([a-zA-Z0-9_-]+)$ product.php?request=menuproduct&menu=1&cat=$1
+##
+RewriteRule ^women/hot-deal.html$ product.php?request=hotdeal&menu=1
+RewriteRule ^women/san-pham-noi-bat.html$ product.php?request=hotproduct&menu=1
+RewriteRule ^women/san-pham-moi.html$ product.php?request=newproduct&menu=1
+RewriteRule ^women.html$ product.php?request=index&menu=1
+RewriteRule ^women/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$ product.php?request=detail&menu=1&cat=$1&catid=$2&id=$4
+RewriteRule ^women/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ product.php?request=submenuproduct&menu=1&cat=$1&catid=$2
+RewriteRule ^women/([a-zA-Z0-9_-]+).html$ product.php?request=menuproduct&menu=1&cat=$1
+##
+
+##############################################################
+
+RewriteRule ^tim-kiem.html&key=([a-zA-z0-9\s_-]+)&category=([0-9]+)&brand=([a-zA-z0-9]+)&from=([0-9]+)&to=([0-9]+)(.*?)$ product.php?request=search&key=$1&cat=$2&brand=$3&from=$4&to=$5
+
+RewriteRule ^dang-nhap.html$ customer.php?request=loginindex
+RewriteRule ^login.html$ customer.php?request=login
+RewriteRule ^dang-ki.html$ customer.php?request=registerindex
+RewriteRule ^register.html$ customer.php?request=register
+RewriteRule ^checklogin.html$ customer.php?request=checklogin
+
+RewriteRule ^quan-ly-tai-khoan.html$ customer.php?request=info
+RewriteRule ^thoat.html$ customer.php?request=logout
+
+RewriteRule ^gio-hang.html$ shopcart.php?request=detail
+RewriteRule ^gio-hang/$ shopcart.php?request=detail
+RewriteRule ^gio-hang$ shopcart.php?request=detail
+RewriteRule ^gio-hang/them.html$ shopcart.php?request=add
+RewriteRule ^gio-hang/huy.html$ shopcart.php?request=delete
+RewriteRule ^gio-hang/clear.html$ shopcart.php?request=clear
+RewriteRule ^gio-hang/cap-nhat.html$ shopcart.php?request=update
+RewriteRule ^gio-hang/thanh-toan.html$ shopcart.php?request=payment
+RewriteRule ^gio-hang/checkpayment.html$ shopcart.php?request=checkpayment
+RewriteRule ^gio-hang/checkout.html$ shopcart.php?request=checkout
+RewriteRule ^gio-hang/temp.html$ shopcart.php?request=temp
+RewriteRule ^gio-hang/success.html$ shopcart.php?request=success
+
+RewriteRule ^sendmail.html$ shopcart.php?request=sendmail
+
+#----------------------------------------------------------------------------------------
+RewriteRule ^quan-ly.html$ Admin/index.php
+RewriteRule ^quan-ly/dang-nhap.html$ Admin/login.php?request=index
+RewriteRule ^quan-ly/danh-muc.html$ Admin/category.php?request=index
+RewriteRule ^quan-ly/danh-muc/them.html$ Admin/category.php?request=add
+RewriteRule ^quan-ly/danh-muc/xoa.html$ Admin/category.php?request=delete
+RewriteRule ^quan-ly/danh-muc/sua.html$ Admin/category.php?request=update
